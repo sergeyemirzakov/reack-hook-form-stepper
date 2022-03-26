@@ -1,0 +1,22 @@
+.progressbar {
+  margin-bottom: 15px;
+}
+
+.progessbar__bg {
+  height: 6px;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 2px;
+  margin: 5px 0 20px 0;
+}
+
+.progressbar__fill {
+  height: 100%;
+  background-color: #8274dc;
+  border-radius: inherit;
+}
+
+.progressbar__title {
+  display: block;
+  font-size: 12px;
+}
