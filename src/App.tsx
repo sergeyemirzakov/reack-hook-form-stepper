@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './form.css';
+import { Routes, Route } from 'react-router-dom';
+import { Container } from './components/Container/Container';
+import { Layout } from './components/Layout';
+import { Step1, Step2, Step3 } from './pages/index';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <div className="form">
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Step1 />} />
+              <Route path="step2" element={<Step2 />} />
+              <Route path="step3" element={<Step3 />} />
+            </Route>
+          </Routes>
+        </div>
+      </Container>
     </div>
   );
 }
