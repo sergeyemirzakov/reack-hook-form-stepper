@@ -59,3 +59,10 @@
 .form__btn-submit.form__btn-prev {
   margin-left: 0;
 }
+
+.form__input-error {
+  margin-top: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: #f14e4e;
+}
